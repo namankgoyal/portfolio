@@ -569,7 +569,8 @@ a:hover {
     transition: all 0.3s ease-in-out 0s;
 }
 
-.navbar a:hover:before,
+
+/* .navbar a:hover:before,
 .navbar li:hover>a:before,
 .navbar .active:before {
     visibility: visible;
@@ -581,7 +582,7 @@ a:hover {
 .navbar .active:focus,
 .navbar li:hover>a {
     color: #fff;
-}
+} */
 
 .navbar .dropdown ul {
     display: block;
@@ -1523,4 +1524,75 @@ footer .credits {
 
 footer .credits a {
     color: #fff;
+}
+
+////
+.content {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.slider-wrapper {
+    font-size: 40px;
+    color: #aaa;
+    /* font-weight: bold; */
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.slider {
+    height: 50px;
+    padding-left: 15px;
+    overflow: hidden;
+}
+
+.slider div {
+    color: #fff;
+    height: 50px;
+    margin-bottom: 50px;
+    padding: 2px 15px;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.slider-text1 {
+    /* background: lightgreen; */
+    animation: slide 5s linear infinite;
+}
+
+.slider-text2 {
+    /* background: skyblue; */
+}
+
+.slider-text3 {
+    /* background: lightcoral; */
+}
+
+@keyframes slide {
+    0% {
+        margin-top: -300px;
+    }
+    5% {
+        margin-top: -200px;
+    }
+    33% {
+        margin-top: -200px;
+    }
+    38% {
+        margin-top: -100px;
+    }
+    66% {
+        margin-top: -100px;
+    }
+    71% {
+        margin-top: 0px;
+    }
+    100% {
+        margin-top: 0px;
+    }
 }
